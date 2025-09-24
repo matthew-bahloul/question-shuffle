@@ -6,7 +6,7 @@ const imageFiles = [
   "/images/2.3--11.png",
   "/images/2.3--25.png",
   "/images/2.3--35.png",
-  
+
   "/images/2.4--21.png",
   "/images/2.4--31.png",
   "/images/2.4--33.png",
@@ -23,7 +23,7 @@ const imageFiles = [
   "/images/2.7--23.png",
   "/images/2.7--25.png",
   "/images/2.7--33.png",
-  
+
   "/images/3.1--19.png",
   "/images/3.1--23.png",
   "/images/3.1--33.png",
@@ -56,7 +56,7 @@ const App = () => {
   return (
     // The main container for the app, using Tailwind CSS classes for styling.
     <div className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4 font-sans">
-      
+
       {/* Container for the button, pinned to the top of the page. */}
       <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-10">
         <button
@@ -69,14 +69,16 @@ const App = () => {
 
       {/* Main content container for the image. */}
       <div className="relative mt-24">
+        <p>{currentImage}</p>
+
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
-            src={`${process.env.PUBLIC_URL}${currentImage}`}
+            // src={`${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
-            style={{ 
-              maxWidth: '80vw', 
+            style={{
+              maxWidth: '80vw',
               maxHeight: '70vh',
               backgroundColor: "white",
               padding: "10%"

@@ -69,8 +69,6 @@ const App = () => {
 
       {/* Main content container for the image. */}
       <div className="relative mt-24">
-        <p>{`https://github.com/matthew-bahloul/question-shuffle${currentImage}`}</p>
-
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
@@ -81,7 +79,8 @@ const App = () => {
               maxWidth: '80vw',
               maxHeight: '70vh',
               backgroundColor: "white",
-              padding: "10%"
+              padding: "10%",
+              
             }}
           />
         ) : (

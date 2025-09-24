@@ -75,12 +75,12 @@ const App = () => {
           src={`https://matthew-bahloul.github.io/question-shuffle${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
+            title={`${currentImage}`}
             style={{
               maxWidth: '80vw',
               maxHeight: '70vh',
               backgroundColor: "white",
               padding: "10%",
-              
             }}
           />
         ) : (

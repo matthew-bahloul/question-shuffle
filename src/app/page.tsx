@@ -69,12 +69,12 @@ const App = () => {
 
       {/* Main content container for the image. */}
       <div className="relative mt-24">
-        <p>{currentImage}</p>
+        <p>{`${process.env.PUBLIC_URL}${currentImage}`}</p>
 
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
-            // src={`${currentImage}`}
+          src={`${process.env.PUBLIC_URL}${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
             style={{

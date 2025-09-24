@@ -69,12 +69,12 @@ const App = () => {
 
       {/* Main content container for the image. */}
       <div className="relative mt-24">
-        <p>{`${process.env.PUBLIC_URL}${currentImage}`}</p>
+        <p>{`https://github.com/matthew-bahloul/question-shuffle${currentImage}`}</p>
 
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
-          src={`${process.env.PUBLIC_URL}${currentImage}`}
+          src={`https://github.com/matthew-bahloul/question-shuffle${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
             style={{

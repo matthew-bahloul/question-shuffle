@@ -74,7 +74,7 @@ const App = () => {
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
-          src={`https://github.com/matthew-bahloul/question-shuffle${currentImage}`}
+          src={`https://matthew-bahloul.github.io/question-shuffle${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
             style={{

@@ -2,6 +2,7 @@
   "name": "image-shuffle",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://matthew-bahloul.github.io/question-shuffle/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",

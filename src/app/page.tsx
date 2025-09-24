@@ -1,22 +1,6 @@
-// This file is a complete, self-contained React application.
-// It is designed to be easily integrated into a React project
-// and deployed as a static site, such as on GitHub Pages.
 "use client";
 import React, { useState, useEffect } from 'react';
 
-// For a simple client-side application, we'll use a hardcoded list of image names.
-// In a full-stack application (e.g., using Next.js or a custom backend),
-// you would replace this hardcoded array with a fetch call to an API endpoint
-// that reads the directory and returns the filenames as a JSON list.
-// For example:
-// useEffect(() => {
-//   const fetchImages = async () => {
-//     const res = await fetch('/api/images');
-//     const data = await res.json();
-//     setImageFiles(data.filenames);
-//   };
-//   fetchImages();
-// }, []);
 const imageFiles = [
   "/images/2.3--23.png",
   "/images/2.3--11.png",
@@ -88,7 +72,7 @@ const App = () => {
         {currentImage ? (
           // Display the image if a file name has been selected.
           <img
-            src={`${currentImage}`}
+            src={`${process.env.PUBLIC_URL}${currentImage}`}
             alt="hey monkey, solve this"
             className="rounded-xl shadow-2xl max-w-full h-auto"
             style={{ 
